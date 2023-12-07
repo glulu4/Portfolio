@@ -1,0 +1,60 @@
+
+.card{
+    min-height:20rem;
+    min-width:15rem;
+    padding:10%;
+    display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+    background-color:white;
+    border-radius:0.5em;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius:0.5em;
+    -moz-border-radius:0.5em;
+    -ms-border-radius:0.5em;
+    -o-border-radius:0.5em;
+}
+
+.card:hover{
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.card-title {
+    text-align: center;
+    font-size:2em;
+    font-family:'RobotoSlab';
+}
+
+
+.project-description {
+    font-family: "IBMPlexMono";
+    /* font-family: "Nunito"; */
+    text-align: center;
+    margin: 5%;
+    padding-bottom: 2%;
+    font-size: large;
+    font-style:bold;
+    font-weight:450;
+}
+
+
+
+.underlineOnHoverStyle {
+
+    text-decoration: none;
+}
+
+
+
+.linkStyle {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    text-decoration: none;
+    color: black;
+}
+
+.linkStyle:hover {
+    text-decoration: none;
+}

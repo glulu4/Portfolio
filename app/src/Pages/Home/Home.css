@@ -1,0 +1,78 @@
+body{
+    background-color:lightblue;
+}
+
+pre{
+    font-size:1.5rem;
+}
+.home-page-div{
+    display:flex;
+    flex-direction:column;
+    align-items:center; /*  row wise*/
+    justify-content:flex-start; /*  column wise*/
+    height:100vh;
+    
+}
+.name{
+    font-size:5rem;
+    font-family: 'RobotoSlab';
+    text-align:center;
+}
+.home-name-div{
+    margin-top: 10%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+        /*  row wise*/
+
+    
+    
+    
+
+}
+.home-description{
+    color:white;
+    font-family: 'IBMPlexMono';
+    font-size: 1.5rem;
+    text-align:center;
+    margin:2%;
+}
+.home-link-container {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between; /* this dienst work because width is too small, if we set it to 50% it;; work*/
+    gap:2rem;
+}
+
+.home-name{
+    font-family:'IBMPlexMono';
+    font-size:3.6rem;
+}
+
+
+.link {
+    position: relative;
+    width: fit-content;
+    font-family: 'IBMPlexMono';
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+.hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FC9F5B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

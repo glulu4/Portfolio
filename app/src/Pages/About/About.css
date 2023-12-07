@@ -1,0 +1,9 @@
+.about-page-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*  row wise*/
+    justify-content: flex-start;
+    /*  column wise*/
+    height: 100vh;
+}
