@@ -5,36 +5,12 @@ import React from 'react'
 // import Letters from './Letters'
 import 'path-data-polyfill';
 import './Home.css'
+
 // import glasses from './glasses.webp'
 // import name from './name.png'
 // import { isMobile } from 'react-device-detect'
 
 function Home(){
-
-    // let file = ""
-    // let nameSize = {};
-    // isMobile ? file = './phoneName.txt' : file = './ascii-text-art.txt'
-
-    // isMobile ? nameSize = {
-    //     fontSize:"1rem"
-    // } : nameSize = {
-    //         fontSize: "1.5rem"
-    // }
-    // useEffect( () => {
-
-    //     fetch(file)
-    //         .then(response => response.text())
-    //         .then((data) => {
-    //             console.log(typeof(data));
-    //             document.getElementById('asci-name-container').textContent = data;
-    //         })
-    //         .catch(error => console.error('Error fetching ASCII art:', error));
-
-    // },[])
-
-
-
-
 
     return(
         <div className='home-page-div'>

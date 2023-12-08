@@ -15,7 +15,22 @@ const baseUrl = window.location.origin;
 
 const projectCards = []
 
-let projectNames = ["Sam's Monday Bagels", "Sorting Algorithms", "Airline System", "Virtual Memory Simulator", "Neighborhood Analysis", "This Site!", "Database Manager", "TBD", "TBD", "TBD", "TBD", "TBD"]
+let projectNames = [
+    "Sam's Monday Bagels", 
+    "Sorting Algorithms", 
+    "Airline System", 
+    "Virtual Memory Simulator", 
+    "Neighborhood Analysis", 
+    "This Site!", 
+    "Database Manager", 
+    "Bouncing DVD Logo", 
+    "Hoodies For Israel", 
+    "Shakespeare Lagauge Model", 
+    "MCtest Q&A Model", 
+    "Snap App", 
+    "Complex Word Classifier", 
+
+]
 
 let projectDescriptions = [
     "Professional Bagel Webiste, designed for weekly orders",
@@ -29,6 +44,7 @@ let projectDescriptions = [
     "...",
     "...",
     "...",
+    "...",
     "..."
 ]
 
@@ -37,7 +53,7 @@ let projectDescriptions = [
 // url paths, from App.js
 
 const paths = [
-    `${baseUrl}/bagels`,
+    `${baseUrl}/bagel`,
     `${baseUrl}/sorting-algorithms`,
     `${baseUrl}/airline`,
     `${baseUrl}/vmsim`,
@@ -61,6 +77,11 @@ projectNames.map((projectName, index) => {
            
                 <h1 className='underlineOnHoverStyle card-title'>{projectName}</h1>
                 <p className='project-description'> {projectDescriptions[index]} </p>
+
+                {/* <div className='dot-grid'>
+                    <span className='dot'></span>
+                    <span>Css</span>    
+                </div> */}
             
 
         </Link >
