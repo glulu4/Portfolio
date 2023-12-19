@@ -20,9 +20,12 @@ function Classifier() {
                     <h1 style={Styles.title}>Complex Word Classifier</h1>
 
                     <p className style={Styles.ptext}>
-                        This is a python complex word classifier. I use word length and average occurence, from the 
-                        Google unigram count, as the two features. Moreover, this program does not identify words in text, rather 
-                        identifies words in a list and reports scores.
+                        This project features a Python-based complex word 
+                        classifier that evaluates words based on two key 
+                        metrics: word length and average occurrence, as sourced 
+                        from Google's unigram count data. Rather than identifying 
+                        words within a text, this program focuses on analyzing words 
+                        from a given list and generates corresponding scores for each.
                     </p>
 
                 </div>
