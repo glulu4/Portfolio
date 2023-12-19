@@ -3,7 +3,8 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    /* min-height:80dvh; */
+    margin:3%;
 
 }
 
@@ -11,9 +12,9 @@
 
 
 
-#bagel-gif{
+#gif{
     border-style: double;
-        border-color: black;
+    border-color: black;
     border-radius:10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);    -webkit-border-radius:10px;
     -moz-border-radius:10px;

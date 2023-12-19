@@ -3,7 +3,76 @@
     flex-direction: column;
     align-items: center;
     /*  row wise*/
-    justify-content: flex-start;
+    justify-content: center;
     /*  column wise*/
-    height: 100vh;
+    min-height: 100vh;
+    margin:5%;
+}
+
+.class-list li {
+    list-style-type:none;
+    margin-bottom: 4%;
+    
+}
+
+.book-list li {
+    /* list-style-type:  */
+    margin-bottom: 4%;
+    padding-left: 0;
+}
+
+.book-list, .class-list, .item-list{
+    list-style: none;
+}
+
+.book-list li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #0087ff;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+
+.class-list li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #7ad926;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+
+.item-list{
+    padding-left:0;
+}
+
+
+
+.other-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* this dienst work because width is too small, if we set it to 50% it;; work*/
+    gap: 2rem;
+    margin-top: 2%;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #323436;
 }

@@ -1,7 +1,5 @@
 import React from 'react';
-// import { Card } from '@mui/material';
 import './Cards.css'
-// import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 // import { isMobile } from 'react-device-detect';
@@ -11,84 +9,85 @@ import { Link } from 'react-router-dom';
 const baseUrl = window.location.origin;
 
 
+const projects = [
+    {
+        name: "Sam's Monday Bagels",
+        description: "Professional Bagel Website, designed for weekly orders",
+        path: `${baseUrl}/projects/bagel`,
+    },
+    // {
+    //     name: "Airline System",
+    //     description: "An airline system that uses graphs and related algorithms",
+    //     path: `${baseUrl}/airline`,
+    // },
+    {
+        name: "Virtual Memory Simulator",
+        description: "A virtual memory simulation",
+        path: `${baseUrl}/projects/vmsim`,
+    },
+    {
+        name: "Neighborhood Analysis",
+        description: "Python Program that determines the best Pittsburgh neighborhood",
+        path: `${baseUrl}/projects/neighborhood`,
+    },
+    {
+        name: "This Site!",
+        description: "Simple yet elegant portfolio for Gabby Lulu",
+        path: `${baseUrl}/portfolio`,
+    },
+    {
+        name: "Database Manager",
+        description: "Database manager for Sam's Bagels",
+        path: `${baseUrl}/projects/database`,
+    },
+    {
+        name: "Bouncing DVD Logo",
+        description: "Recreated the classic bouncing dvd logo",
+        path: `${baseUrl}/projects/dvd`,
+    },
+    {
+        name: "Hoodies For Israel",
+        description: "Simple website, designed to raise money for Israel by selling hoodies",
+        path: `${baseUrl}/projects/hoodie`,
+    },
+    {
+        name: "Shakespeare Language Model",
+        description: "Trained an n-gram model on a Shakespeare corpus",
+        path: `${baseUrl}/projects/ngram`,
+    },
+    // {
+    //     name: "MCtest Q&A Model",
+    //     description: "Created a model that can answer simple multiple choice questions",
+    //     path: `${baseUrl}/tbd`,
+    // },
+    {
+        name: "Snap App",
+        description: "Flutter productivity web app",
+        path: `${baseUrl}/projects/snap-app`,
+    },
+    {
+        name: "Complex Word Classifier",
+        description: "Naive Bayes / Logistic Regression model that can predict complex words in a given text",
+        path: `${baseUrl}/projects/classifier`,
+    },
 
-
-const projectCards = []
-
-let projectNames = [
-    "Sam's Monday Bagels", 
-    "Sorting Algorithms", 
-    "Airline System", 
-    "Virtual Memory Simulator", 
-    "Neighborhood Analysis", 
-    "This Site!", 
-    "Database Manager", 
-    "Bouncing DVD Logo", 
-    "Hoodies For Israel", 
-    "Shakespeare Lagauge Model", 
-    "MCtest Q&A Model", 
-    "Snap App", 
-    "Complex Word Classifier", 
-
-]
-
-let projectDescriptions = [
-    "Professional Bagel Webiste, designed for weekly orders",
-    "Various sorting algorithms, written in Java",
-    "An airline system that uses graphs and related algorithms",
-    "A virtual memory simulation",
-    "Python Program that determines the best Pittsburgh neighborhood",
-    "Simple yet elegant portfolio for Gabby Lulu",
-    "Database manager for Sam's Bagels",
-    "...",
-    "...",
-    "...",
-    "...",
-    "...",
-    "..."
-]
-
-
-
-// url paths, from App.js
-
-const paths = [
-    `${baseUrl}/bagel`,
-    `${baseUrl}/sorting-algorithms`,
-    `${baseUrl}/airline`,
-    `${baseUrl}/vmsim`,
-    `${baseUrl}/neighborhood`,
-    `${baseUrl}/portfolio`,
-    `${baseUrl}/DatabaseManager`,
-    `${baseUrl}/tbd`,
-    `${baseUrl}/tbd`,
-    `${baseUrl}/tbd`,
-    `${baseUrl}/tbd`,
-    `${baseUrl}/tbd`,
 ];
-
-
 // eslint-disable-next-line
-projectNames.map((projectName, index) => {
-    projectCards.push(
-        <div className='card'>
-        <Link to={paths[index]} className='linkStyle' >
+const projectCards = projects.map((project, index) => (
+    <div className='card' key={index}>
+        <Link to={project.path} className='linkStyle'>
+            <h1 className='underlineOnHoverStyle card-title'>{project.name}</h1>
+            <p className='project-description'>{project.description}</p>
+        </Link>
+    </div>
+));
 
-           
-                <h1 className='underlineOnHoverStyle card-title'>{projectName}</h1>
-                <p className='project-description'> {projectDescriptions[index]} </p>
 
-                {/* <div className='dot-grid'>
-                    <span className='dot'></span>
-                    <span>Css</span>    
-                </div> */}
-            
 
-        </Link >
-        </div>
-    );
 
-})
+
+
+
 
 
 
