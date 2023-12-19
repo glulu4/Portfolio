@@ -5,7 +5,7 @@ import React from 'react'
 // import Letters from './Letters'
 import 'path-data-polyfill';
 import './Home.css'
-
+import Links from '../Links';
 // import glasses from './glasses.webp'
 // import name from './name.png'
 import { isMobile } from 'react-device-detect'
@@ -53,7 +53,7 @@ function Home(){
                 
             </div> */}
 
-
+            <Links/>
         </div>
     )
 

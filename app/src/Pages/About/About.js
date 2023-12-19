@@ -5,6 +5,7 @@ import { Styles } from '../Projects/Project_Pages/Styles';
 import BackArrow from '../BackArrow';
 import JobHistoryDialog from './JobHistoryDialog'
 
+
 function About(){
 
 
