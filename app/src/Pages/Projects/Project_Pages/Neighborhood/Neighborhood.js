@@ -21,8 +21,9 @@ function Neighborhood() {
 
                     <p className style={Styles.ptext}>
                         This group project aimed to find the best neighborhood in Pittsburgh, 
-                        based off of the crime rate, number of park-land, trees, and income. 
-                        My part includes the data analysis of the 'natural environment conditions'. 
+                        based off of the crime rate, number of acres of park-land / trees, and income. 
+                        My role included the data analysis of the 'natural environment conditions'. 
+                        The code can be found on my <a href='https://github.com/glulu4/Pittsburgh_Neighborhood_Analysis' target='_target'>github</a>.
                     </p>
 
                 </div>

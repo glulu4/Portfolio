@@ -21,12 +21,11 @@ function Bagel(){
 
                     <p className style={Styles.ptext}>
                         Shmuel's Monday Bagels is a professional website for a local bakery 
-                        based in Pittsburgh. This website uses React for the frontend and 
-                        Flask for the backend. Moreover, ThreeJs, the Stripe API, and 
-                        Yagmail, are used to add the 3D bagel, the payment page, and 
-                        emailing the weekly orders to the owner, respectively.
-                        All the code can be found on my github, glulu4 
-                        ( linked on homepage).
+                        in Pittsburgh. I used React and Flask for the frontend and backend. 
+                        Moreover, ThreeJs, the Stripe API, and 
+                        Yagmail, were used for the 3D bagel, payment processing, email system, respectively.
+                        All the code can be found on my <a href='https://github.com/glulu4/Bagels' target='_target'>github</a>. 
+                        The site, can be found <a href='https://shmuelsmondaybagels.com/' target='_target'>here</a>.
                     </p>
 
                 </div>

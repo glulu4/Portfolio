@@ -22,7 +22,7 @@ function Snap() {
                     <p className style={Styles.ptext}>
                        Snap App, the productivity app, was a class project I worked on 
                         with two others, Hannah Harhai @hannahharhai & Maya Iwabuchi @mayajoyiwabuchi.
-                        We designed this web app under the MVVM design principle. 
+                        We designed this web app under the MVVM design principle. All the code is on my <a href='https://github.com/glulu4/Snap_App' target='_target'>github</a>.
                     </p>
 
                 </div>

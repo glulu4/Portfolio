@@ -26,6 +26,7 @@ function Classifier() {
                         from Google's unigram count data. Rather than identifying 
                         words within a text, this program focuses on analyzing words 
                         from a given list and generates corresponding scores for each.
+                        The code can be found on my <a href='https://github.com/glulu4/Complex-Word-Classifier/blob/main/README.md' target='_target'>github</a>.
                     </p>
 
                 </div>

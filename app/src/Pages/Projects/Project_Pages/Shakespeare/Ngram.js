@@ -21,7 +21,7 @@ function Ngram() {
 
                     <p className style={Styles.ptext}>
                         N-gram langauge model that is trained on a Shakespeare corpus of text. 
-                        No smoothing is used. 
+                        No smoothing is used. A dynamic context size is used. All the code can be found <a href='https://github.com/glulu4/N-gram-Langauge-Model' target='_target'>here</a>.
                     </p>
 
                 </div>

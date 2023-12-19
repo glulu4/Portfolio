@@ -31,9 +31,9 @@ const projects = [
         path: `${baseUrl}/projects/neighborhood`,
     },
     {
-        name: "This Site!",
+        name: "Old Portfolio",
         description: "Simple yet elegant portfolio for Gabby Lulu",
-        path: `${baseUrl}/portfolio`,
+        path: `${baseUrl}/`,
     },
     {
         name: "Database Manager",

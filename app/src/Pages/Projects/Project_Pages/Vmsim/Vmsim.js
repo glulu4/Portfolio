@@ -17,12 +17,12 @@ function Vmsim() {
 
             <div className='row' style={Styles.rowStyle}>
                 <div className='box' style={Styles.boxStyle}>
-                    <h1 style={Styles.title}>Complex Word Classifier</h1>
+                    <h1 style={Styles.title}>Virtual Memory Simulator</h1>
 
                     <p className style={Styles.ptext}>
-                        This is a python complex word classifier. I use word length and average occurence, from the
-                        Google unigram count, as teh features. Moreover, this program does not identify words in text, rather
-                        identifies words in a list and reports scores.
+                        The gif to the right / bottom displays a simulation of vvirtual memory and paging, 
+                        using both a single-level page table and a two-level tree. I used Java for this project. The code
+                        can be found on my <a href='https://github.com/glulu4/Virtual-Memory-Simulation' target='_target'>github</a>.
                     </p>
 
                 </div>

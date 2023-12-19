@@ -22,7 +22,8 @@ function Database() {
                     <p className style={Styles.ptext}>
                         Java program that executes a variety of cURL commands, 
                         using the HttpURLConnection class. The cURL commands include 
-                        GET, POST, and DELETE.
+                        GET, POST, and DELETE. This was made for Sam's Bagel's. 
+                        The code can be found <a href='https://github.com/glulu4/Database-Manager'>here</a>.
 
 
                     </p>
