@@ -66,7 +66,7 @@ function About(){
                      it involves programming or not. Outside of technology, 
                      I'm keenly interested in investment and deeply committed to 
                      maintaining a healthy lifestyle. I also play tennis and chess, 
-                     and I'm super competative 🤓.
+                     and I'm super competitive 🤓.
                      <br/>
                     <br />
                      <hr/>
