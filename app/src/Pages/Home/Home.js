@@ -1,13 +1,9 @@
 import React from 'react'
-// import { useEffect } from 'react';
-// import Matter from 'matter-js';
 
-// import Letters from './Letters'
 import 'path-data-polyfill';
 import './Home.css'
 import Links from '../Links';
-// import glasses from './glasses.webp'
-// import name from './name.png'
+
 import { isMobile } from 'react-device-detect'
 
 const nameStyle = {

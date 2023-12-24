@@ -1,6 +1,16 @@
 import React from 'react';
 import './Cards.css'
 import { Link } from 'react-router-dom';
+import { JavaOriginal } from 'devicons-react';
+import { FlaskOriginalWordmark } from 'devicons-react';
+import { PythonOriginalWordmark } from 'devicons-react';
+import { ReactOriginal } from 'devicons-react';
+import { FlutterOriginal } from 'devicons-react';
+import { COriginal } from 'devicons-react';
+
+
+
+
 
 // import { isMobile } from 'react-device-detect';
 
@@ -9,11 +19,34 @@ import { Link } from 'react-router-dom';
 const baseUrl = window.location.origin;
 
 
+const iconDiv = {
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    gap:'2rem',
+    paddingTop:'1.5rem'
+}
+
+               
+                
+                
+
+const FLASK = <FlaskOriginalWordmark size='70' />;
+const JAVA = < JavaOriginal size='50' />;
+const PYTHON = <PythonOriginalWordmark size='60' />;
+const REACT = < ReactOriginal size='60' />;
+const FLUTTER = <FlutterOriginal size="55" />;
+// eslint-disable-next-line
+const C = <COriginal size='60' />;
+
+
 const projects = [
     {
         name: "Sam's Monday Bagels",
         description: "Professional Bagel Website, designed for weekly orders",
         path: `${baseUrl}/projects/bagel`,
+        langaugesIcons: [FLASK, REACT]
+        
     },
     // {
     //     name: "Airline System",
@@ -24,36 +57,45 @@ const projects = [
         name: "Virtual Memory Simulator",
         description: "A virtual memory simulation",
         path: `${baseUrl}/projects/vmsim`,
+        langaugesIcons: [JAVA]
+
     },
     {
         name: "Neighborhood Analysis",
         description: "Python Program that determines the best Pittsburgh neighborhood",
         path: `${baseUrl}/projects/neighborhood`,
+        langaugesIcons: [PYTHON]
+
     },
     {
         name: "Old Portfolio",
         description: "Simple yet elegant portfolio for Gabby Lulu",
-        path: `${baseUrl}/`,
+        path: `${baseUrl}/projects/old-portfolio`,
+        langaugesIcons: [REACT]
     },
     {
         name: "Database Manager",
         description: "Database manager for Sam's Bagels",
         path: `${baseUrl}/projects/database`,
+        langaugesIcons: [JAVA]
     },
     {
         name: "Bouncing DVD Logo",
         description: "Recreated the classic bouncing dvd logo",
         path: `${baseUrl}/projects/dvd`,
+        langaugesIcons: [REACT]
     },
     {
         name: "Hoodies For Israel",
         description: "Simple website, designed to raise money for Israel by selling hoodies",
         path: `${baseUrl}/projects/hoodie`,
+        langaugesIcons: [REACT]
     },
     {
         name: "Shakespeare Language Model",
         description: "Trained an n-gram model on a Shakespeare corpus",
         path: `${baseUrl}/projects/ngram`,
+        langaugesIcons: [PYTHON]
     },
     // {
     //     name: "MCtest Q&A Model",
@@ -64,11 +106,13 @@ const projects = [
         name: "Snap App",
         description: "Flutter productivity web app",
         path: `${baseUrl}/projects/snap-app`,
+        langaugesIcons: [FLUTTER]
     },
     {
         name: "Complex Word Classifier",
         description: "Naive Bayes / Logistic Regression model that can predict complex words in a given text",
         path: `${baseUrl}/projects/classifier`,
+        langaugesIcons: [PYTHON]
     },
 
 ];
@@ -78,6 +122,14 @@ const projectCards = projects.map((project, index) => (
         <Link to={project.path} className='linkStyle'>
             <h1 className='underlineOnHoverStyle card-title'>{project.name}</h1>
             <p className='project-description'>{project.description}</p>
+
+            
+            <div style={iconDiv}>
+                {project.langaugesIcons.map((lang, index) => {
+                    return lang
+                })}
+
+            </div>
         </Link>
     </div>
 ));

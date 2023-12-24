@@ -14,6 +14,7 @@ import Neighborhood from './Pages/Projects/Project_Pages/Neighborhood/Neighborho
 import Classifier from './Pages/Projects/Project_Pages/Classifier/Classifier';
 import Vmsim from './Pages/Projects/Project_Pages/Vmsim/Vmsim';
 import Database from './Pages/Projects/Project_Pages/Database/Database';
+import OldPortfolio from './Pages/Projects/Project_Pages/Old_Portfolio/OldPortfolio';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path='projects/classifier' element={<Classifier />} />
         <Route path='projects/vmsim' element={<Vmsim />} />
         <Route path='projects/database' element={<Database />} />
+        <Route path='projects/old-portfolio' element={<OldPortfolio />} />
+
 
 
 

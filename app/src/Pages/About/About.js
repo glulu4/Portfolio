@@ -4,6 +4,9 @@ import { isMobile } from 'react-device-detect'
 import { Styles } from '../Projects/Project_Pages/Styles';
 import BackArrow from '../BackArrow';
 import JobHistoryDialog from './JobHistoryDialog'
+// import azure from './azure.png'
+// import azureAI from './azure-ai.png'
+
 
 
 function About(){
@@ -15,6 +18,12 @@ function About(){
         fontSize: '2rem'
     }
 
+
+    // const certDivStyle = {
+    //     width: isMobile ? '60%' : "100%",
+    //     fontFamily: 'Inter',
+    //     fontSize: '2rem'
+    // }
     const listStyle = {
         fontFamily: 'Inter',
         fontSize: '2rem',
@@ -53,6 +62,35 @@ function About(){
         justifyContent:'center'
 
     }
+
+
+    // const rowStyle = {
+    //     display: "flex",
+    //     width: '100%',
+    //     height: 'auto',
+    //     flexDirection: isMobile ? "column" : "row",
+    //     gap: '4rem',
+    //     marginTop:'5%',
+    // }
+
+    // const boxStyle = {
+    //     display: 'flex',
+    //     flexBasis: "50%",
+    //     flexGrow: "1",
+    //     minWidth: "0px",
+    //     flexDirection: "column",
+    //     margin: "2%",
+    //     minHeight: "0px",
+                                    
+    //     justifyContent: "flex-start",
+    // }
+
+    // const imageStyle = { 
+    //     height: 'auto', 
+    //     width: '600px', 
+    //     objectFit: 'contain'
+    //  }
+
     return(
         <div className='about-page-div'>
             <BackArrow></BackArrow>
@@ -93,7 +131,7 @@ function About(){
                         </p>
                     </div>
                 </div>
-                <div className='box' style={Styles.boxStyle2}>
+                <div className='box' style={Styles.boxStyle}>
                     <div style={listStyle} >
                         <p>
                             <span style={listTitleStyle}>Favorite Books 📖:</span>
@@ -112,6 +150,20 @@ function About(){
                 </div>
                 
             </div>
+
+            {/* <div style={certDivStyle}>
+                <hr />
+                I'm also bilingual; I speak English and Hebrew. Moreover, I have two Microsoft certifications!
+                <div className='row' style={rowStyle}>
+                    <div className='box' style={boxStyle}>
+                        <img style={imageStyle} src={azure} alt=""/>
+                    </div>
+                    <div className='box' style={boxStyle}>
+                        <img style={imageStyle} src={azureAI} alt="Azure AI certification" />
+                    </div>
+
+                </div>
+            </div> */}
             
 
 
