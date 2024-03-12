@@ -45,7 +45,8 @@ const projects = [
         name: "Sam's Monday Bagels",
         description: "Professional Bagel Website, designed for weekly orders",
         path: `${baseUrl}/projects/bagel`,
-        langaugesIcons: [FLASK, REACT]
+        langaugesIcons: [FLASK, REACT], 
+        
         
     },
     // {
