@@ -27,7 +27,8 @@ export const Styles = {
         flexDirection: "column",
         margin: "2%",
         minHeight: "0px",
-        overflow: 'auto', // maybe change to croll
+        overflow: 'visible', // maybe change to croll
+        alignItems: "center",
 
     },
     rowStyle : {

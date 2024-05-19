@@ -49,6 +49,12 @@ const projects = [
         
         
     },
+    {
+        name:"Receipt Budget Tracker",
+        description:"A mobile app that scans receipts and tracks expenses",
+        path:`${baseUrl}/projects/budget`,
+        langaugesIcons: [FLASK, REACT], 
+    },
     // {
     //     name: "Airline System",
     //     description: "An airline system that uses graphs and related algorithms",
@@ -115,6 +121,7 @@ const projects = [
         path: `${baseUrl}/projects/classifier`,
         langaugesIcons: [PYTHON]
     },
+
 
 ];
 // eslint-disable-next-line
