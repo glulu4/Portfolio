@@ -7,7 +7,9 @@ import { PythonOriginalWordmark } from 'devicons-react';
 import { ReactOriginal } from 'devicons-react';
 import { FlutterOriginal } from 'devicons-react';
 import { COriginal } from 'devicons-react';
+import { HaskellOriginal } from 'devicons-react';
 
+// https://devicons-react.vercel.app/latest
 
 
 
@@ -36,6 +38,7 @@ const JAVA = < JavaOriginal size='50' />;
 const PYTHON = <PythonOriginalWordmark size='60' />;
 const REACT = < ReactOriginal size='60' />;
 const FLUTTER = <FlutterOriginal size="55" />;
+const HASKELL = <HaskellOriginal size='60' />
 // eslint-disable-next-line
 const C = <COriginal size='60' />;
 
@@ -79,6 +82,12 @@ const projects = [
         description: "Simple yet elegant portfolio for Gabby Lulu",
         path: `${baseUrl}/projects/old-portfolio`,
         langaugesIcons: [REACT]
+    },
+    {
+        name: "Sudoku Solver in Haskell",
+        description: "Implemented DFS in Haskell to solve sudoku",
+        path: `${baseUrl}/projects/sudoku`,
+        langaugesIcons: [HASKELL]
     },
     {
         name: "Database Manager",
