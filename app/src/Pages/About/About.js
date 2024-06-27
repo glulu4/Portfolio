@@ -17,13 +17,6 @@ function About(){
         fontFamily: 'Inter', 
         fontSize: '2rem'
     }
-
-
-    // const certDivStyle = {
-    //     width: isMobile ? '60%' : "100%",
-    //     fontFamily: 'Inter',
-    //     fontSize: '2rem'
-    // }
     const listStyle = {
         fontFamily: 'Inter',
         fontSize: '2rem',
@@ -63,34 +56,6 @@ function About(){
 
     }
 
-
-    // const rowStyle = {
-    //     display: "flex",
-    //     width: '100%',
-    //     height: 'auto',
-    //     flexDirection: isMobile ? "column" : "row",
-    //     gap: '4rem',
-    //     marginTop:'5%',
-    // }
-
-    // const boxStyle = {
-    //     display: 'flex',
-    //     flexBasis: "50%",
-    //     flexGrow: "1",
-    //     minWidth: "0px",
-    //     flexDirection: "column",
-    //     margin: "2%",
-    //     minHeight: "0px",
-                                    
-    //     justifyContent: "flex-start",
-    // }
-
-    // const imageStyle = { 
-    //     height: 'auto', 
-    //     width: '600px', 
-    //     objectFit: 'contain'
-    //  }
-
     return(
         <div className='about-page-div'>
             <BackArrow></BackArrow>
@@ -98,13 +63,15 @@ function About(){
                 <p>
                     <hr />
                     <br />
-                    Hello! I'm <span style={{fontWeight:'bold'}}>Gabby Lulu</span>, a Computer Science major and Economics minor at the 
-                    University of Pittsburgh. As an aspiring developer, 
-                    I have a strong passion for problem-solving, whether
-                     it involves programming or not. Outside of technology, 
-                     I'm keenly interested in investment and deeply committed to 
-                     maintaining a healthy lifestyle. I also play tennis and chess, 
-                     and I'm super competitive 🤓.
+                    Hello! I'm <span style={{fontWeight:'bold'}}>Gabby Lulu</span>.
+                    I recently graduated from the University of Pittsburgh, where I majored 
+                    in Computer Science and minored in Economics. 
+                    As an aspiring developer, I have a strong passion for problem-solving, 
+                    both in programming and beyond. I enjoy developing full-stack 
+                    applications with React. Outside of technology, I'm keenly 
+                    interested in investment and dedicated to maintaining a healthy lifestyle. 
+                    I play tennis and chess, and I'm super competitive 🤓.
+
                      <br/>
                     <br />
                      <hr/>
@@ -123,7 +90,6 @@ function About(){
                                 <li>Intro to Operating Systems</li>
                                 <li>Human Language Technologies ( NLP )</li>
                                 <li>Interface Design Methodology</li>
-                                <li>Deep Learning</li>
                                 <li>Functional Programming</li>
                                 <li>Financial Markets and Institutions</li>
                             </ul>
@@ -150,25 +116,6 @@ function About(){
                 </div>
                 
             </div>
-
-            {/* <div style={certDivStyle}>
-                <hr />
-                I'm also bilingual; I speak English and Hebrew. Moreover, I have two Microsoft certifications!
-                <div className='row' style={rowStyle}>
-                    <div className='box' style={boxStyle}>
-                        <img style={imageStyle} src={azure} alt=""/>
-                    </div>
-                    <div className='box' style={boxStyle}>
-                        <img style={imageStyle} src={azureAI} alt="Azure AI certification" />
-                    </div>
-
-                </div>
-            </div> */}
-            
-
-
-
-
             <div style={descriptionStyle}>
                 <hr />
                 <div style={otherDivTitleStyle}>
