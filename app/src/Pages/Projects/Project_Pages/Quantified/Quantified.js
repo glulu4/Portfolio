@@ -31,7 +31,7 @@ function Quantified() {
     </>
   return (
     <ProjectPage
-      title="Quantified"
+      title="Quantified - in progress 9/16/24"
       description={description}
       gif={gif}
       style={style}
