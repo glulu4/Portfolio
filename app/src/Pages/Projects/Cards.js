@@ -6,8 +6,9 @@ import { FlaskOriginalWordmark } from 'devicons-react';
 import { PythonOriginalWordmark } from 'devicons-react';
 import { ReactOriginal } from 'devicons-react';
 import { FlutterOriginal } from 'devicons-react';
-import { COriginal } from 'devicons-react';
 import { HaskellOriginal } from 'devicons-react';
+import { FirebaseOriginalWordmark } from 'devicons-react';
+import { TailwindcssOriginal } from 'devicons-react';
 
 // https://devicons-react.vercel.app/latest
 
@@ -39,11 +40,24 @@ const PYTHON = <PythonOriginalWordmark size='60' />;
 const REACT = < ReactOriginal size='60' />;
 const FLUTTER = <FlutterOriginal size="55" />;
 const HASKELL = <HaskellOriginal size='60' />
-// eslint-disable-next-line
-const C = <COriginal size='60' />;
+const FIREBASE = <FirebaseOriginalWordmark size="82"/>
+const TailWind = <TailwindcssOriginal  size="60"/>
 
 
 const projects = [
+    {
+        name: "Quantified",
+        description: "Health tracking app",
+        path: `${baseUrl}/projects/quantified`,
+        langaugesIcons: [REACT, FIREBASE],
+    },
+
+    {
+        name: "Seo Crew",
+        description: "Styled a company webiste",
+        path: `${baseUrl}/projects/seocrew`,
+        langaugesIcons: [REACT, TailWind],
+    },
     {
         name: "Sam's Monday Bagels",
         description: "Professional Bagel Website, designed for weekly orders",
@@ -52,6 +66,7 @@ const projects = [
         
         
     },
+
     {
         name:"Receipt Budget Tracker",
         description:"A mobile app that scans receipts and tracks expenses",
