@@ -69,8 +69,8 @@ function About(){
                     As an aspiring developer, I have a strong passion for problem-solving, 
                     both in programming and beyond. I enjoy developing full-stack 
                     applications with React. Outside of technology, I'm keenly 
-                    interested in investment and dedicated to maintaining a healthy lifestyle. 
-                    I play tennis and chess, and I'm super competitive 🤓.
+                    interested in investment, tennis, and I'm dedicated to maintaining a healthy lifestyle. 
+                    
 
                      <br/>
                     <br />
