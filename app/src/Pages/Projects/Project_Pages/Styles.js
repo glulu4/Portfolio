@@ -69,6 +69,7 @@ export const Styles = {
 
 
     gifStyle : {
+        width: isMobile ? "80%": "100%",
         borderStyle: 'double',
         borderColor: 'black',
         borderRadius: '10px',

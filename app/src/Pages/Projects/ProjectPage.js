@@ -7,6 +7,7 @@ import { Styles } from './Project_Pages/Styles'
 const ProjectPage = ({title, description, gif, style, }) => {
 
 
+
     return (
         <div style={Styles.pageDiv}>
 
@@ -22,7 +23,7 @@ const ProjectPage = ({title, description, gif, style, }) => {
                     </p>
 
                 </div>
-                <div className='box' style={Styles.boxStyle2}>
+                <div className='box' style={{...Styles.boxStyle2, }}>
                     <img style={{ ...Styles.gifStyle, ...style?.gifStyle}} src={gif} alt="" />
                 </div>
 
