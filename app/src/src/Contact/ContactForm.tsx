@@ -149,8 +149,6 @@ function ContactForm() {
 
                 </div>
             </div>
-            styles.
-
 
             <div>
                 <p style={styles.header}>Message</p>
