@@ -71,10 +71,11 @@ const styles = createStyles({
         gap: '3em',
     },
     categoryHeading: {
-        fontSize: '2em',
+        fontSize: '3em',
         fontWeight: 'bold',
         marginBottom: '0.5em',
-        textAlign: isMobile ? "center" : undefined
+        textAlign: isMobile ? "center" : undefined,
+        paddingLeft:15
     },
     projectGrid: {
         display: 'grid',
