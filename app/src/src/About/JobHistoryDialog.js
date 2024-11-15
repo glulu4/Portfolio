@@ -21,12 +21,13 @@ function JobHistoryDialog() {
         fontFamily: 'IBMPlexMono',
         fontWeight: 'bold',
         fontSize:'2rem',
-        color:'#f76c6c'
+        color:'#f76c6c',
+        
     }
 
     return (
         <div>
-            <a onClick={handleClickOpen} href="/" className="link hover">
+            <a onClick={handleClickOpen} href="/">
                 <p style={titleStyle}>Job history</p>
             </a>
             <Dialog open={open} onClose={handleClose} scroll={'paper'} aria-labelledby="scroll-dialog-title" aria-describedby="scroll-dialog-description">

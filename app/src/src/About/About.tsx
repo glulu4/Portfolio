@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import './About.css'
 import { isMobile } from 'react-device-detect'
 import BackArrow from '../components/BackArrow';
-import JobHistoryDialog from './JobHistoryDialog'
+// import JobHistoryDialog from './JobHistoryDialog'
 import createStyles from '../../styles/styles';
 // import azure from './azure.png'
 // import azureAI from './azure-ai.png'
@@ -20,15 +20,12 @@ function About(){
                 <p>
                     <hr />
                     <br />
-                    Hello! I'm <span style={{fontWeight:'bold'}}>Gabby Lulu</span>.
-                    I recently graduated from the University of Pittsburgh, where I majored 
-                    in Computer Science and minored in Economics. 
-                    As an aspiring developer, I have a strong passion for problem-solving, 
-                    both in programming and beyond. I enjoy developing full-stack 
-                    applications with React. Outside of technology, I'm keenly 
-                    interested in investment, tennis, and I'm dedicated to maintaining a healthy lifestyle. 
-                    
-
+                    Hi
+                    <br />
+                    <br />
+                    I'm <span style={{fontWeight:'bold'}}>Gabby Lulu</span>.
+                    I'm a software developer with full-stack experience building websites and apps, building interactive 
+                    dashboards in Tableau, data analysis, and etc.                    
                      <br/>
                     <br />
                      <hr/>
@@ -36,12 +33,12 @@ function About(){
             </div>
 
 
-            <div  style={styles.rowStyle}>
+            {/* <div  style={styles.rowStyle}>
 
                 <div  style={styles.boxStyle}>
                     <div style={styles.listStyle}>
                         <p>
-                            <span style={styles.listTitleStyle}>Cool Classes I've taken 🖥️:</span>
+                            <span style={styles.listTitleStyle}>Technologies & Languages</span>
                             <ul className='class-list'>
                                 <li>Programming Languages for Web Applications</li>
                                 <li>Intro to Operating Systems</li>
@@ -72,8 +69,8 @@ function About(){
                     </div>
                 </div>
                 
-            </div>
-            <div style={styles.descriptionStyle}>
+            </div> */}
+            {/* <div style={styles.descriptionStyle}>
                 <hr />
                 <div style={styles.otherDivTitleStyle}>
                     <h2 style={styles.otherStyle}>Other</h2>
@@ -83,14 +80,14 @@ function About(){
 
                     < JobHistoryDialog />
                     <div>
-                        <a href="https://www.youtube.com/watch?v=VMAPTo7RVCo&list=WL&index=6&t=7463s" className="link hover" target='#' >
+                        <a href="https://www.youtube.com/watch?v=VMAPTo7RVCo&list=WL&index=6&t=7463s" target='#' >
                             <p style={styles.titleStyle}>Study Music</p>
                         </a>
                     </div>
 
                 </div>
 
-            </div>
+            </div> */}
             
 
 
@@ -108,7 +105,7 @@ const styles = createStyles({
         flexDirection:"column",
         alignItems:"center",
         justifyContent:"center",
-        minHeight:"100vh",
+        maxHeight:"100vh",
         margin:"5%"
 
     },

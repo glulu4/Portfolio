@@ -6,7 +6,7 @@ interface ProjectCardProps {
   name: string;
   description: string;
   path: string;
-  languageIcons: JSX.Element[];
+  languageIcons: readonly JSX.Element[];
 }
 
 const ProjectCard = ({name, description, path, languageIcons}: ProjectCardProps) => {
@@ -41,18 +41,24 @@ export default ProjectCard;
 
 const styles = createStyles({
   card: {
-    minHeight: '20rem',
-    minWidth: '15rem',
-    padding: '10%',
+    width: '18rem',
+    height: '24rem',
+    padding: '1rem',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     backgroundColor: 'white',
     borderRadius: '0.5em',
-    transition: 'box-shadow 0.25s ease',
+    // transition: 'box-shadow 0.25s ease',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
   },
+  // cardHover: {
+  //   boxShadow: '20px 15px rgba(0, 0, 0, 0.2)',
+  // },
   cardHover: {
-    boxShadow: '20px 15px rgba(0, 0, 0, 0.2)',
+    transform: 'translateY(-5px)',
+    boxShadow: '0 6px 16px rgba(0, 0, 0, 0.2)',
   },
   cardTitle: {
     textAlign: 'center',

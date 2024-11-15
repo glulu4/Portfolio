@@ -6,6 +6,8 @@ import {FlutterOriginal} from 'devicons-react';
 import {HaskellOriginal} from 'devicons-react';
 import {FirebaseOriginalWordmark} from 'devicons-react';
 import {TailwindcssOriginal} from 'devicons-react';
+import {NextjsOriginalWordmark} from 'devicons-react';
+
 // https://devicons-react.vercel.app/latest
 const FLASK = <FlaskOriginalWordmark size='70' />
 const JAVA = < JavaOriginal size='50' />;
@@ -15,6 +17,14 @@ const FLUTTER = <FlutterOriginal size="55" />;
 const HASKELL = <HaskellOriginal size='60' />
 const FIREBASE = <FirebaseOriginalWordmark size="82" />
 const TailWind = <TailwindcssOriginal size="60" />
+const Next = <NextjsOriginalWordmark size='75' />
+
+enum ProjectCategory {
+  SCHOOL = "School",
+  WEBSITE = "Website",
+  APP = "Mobile",
+  OTHER = "Other"
+}
 
 export const projectData = [
   {
@@ -38,6 +48,7 @@ export const projectData = [
     path: `quantified`,
     langaugesIcons: [REACT, FIREBASE],
     mobileDisplay: true,
+    category: ProjectCategory.APP
   },
 
   {
@@ -54,6 +65,7 @@ export const projectData = [
     path: `seocrew`,
     langaugesIcons: [REACT, TailWind],
     mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
   },
   {
     name: "Sam's Monday Bagels",
@@ -72,6 +84,7 @@ export const projectData = [
     path: `bagel`,
     langaugesIcons: [FLASK, REACT],
     mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
   },
 
   {
@@ -90,6 +103,7 @@ export const projectData = [
     path: `budget`,
     langaugesIcons: [FLASK, REACT],
     mobileDisplay: true,
+    category: ProjectCategory.APP
   },
 
   {
@@ -104,6 +118,7 @@ export const projectData = [
     path: `vmsim`,
     langaugesIcons: [JAVA],
     mobileDisplay: false,
+    category: ProjectCategory.SCHOOL,
   },
   {
     name: "Neighborhood Analysis",
@@ -120,6 +135,7 @@ export const projectData = [
     path: `neighborhood`,
     langaugesIcons: [PYTHON],
     mobileDisplay: false,
+    category: ProjectCategory.SCHOOL
 
   },
 
@@ -136,6 +152,7 @@ export const projectData = [
     path: `sudoku`,
     langaugesIcons: [HASKELL],
     mobileDisplay: false,
+    category: ProjectCategory.SCHOOL
   },
 
   {
@@ -145,6 +162,7 @@ export const projectData = [
     path: `dvd`,
     langaugesIcons: [REACT],
     mobileDisplay: false,
+    category: ProjectCategory.OTHER
   },
   {
     name: "Hoodies For Israel",
@@ -161,6 +179,23 @@ export const projectData = [
     path: `hoodie`,
     langaugesIcons: [REACT],
     mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
+  },
+  {
+    name: "Custom Blog with CMS",
+    description: "Blog site - Judaism in the City",
+    gif: "/gifs/giseleBlog.gif",
+    detail:
+      <>
+        Judaism in the City is a Next.js blog site 
+        styled with Tailwind Css and integartes the Wisp CMS.
+
+        The site, can be found <a href='https://www.judaisminthecity.com/about' target='_target'>here</a>.
+      </>,
+    path: `custom-blog`,
+    langaugesIcons: [Next, TailWind],
+    mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
   },
   {
     name: "Shakespeare Language Model",
@@ -174,6 +209,7 @@ export const projectData = [
     path: `ngram`,
     langaugesIcons: [PYTHON],
     mobileDisplay: false,
+    category: ProjectCategory.SCHOOL
   },
   {
     name: "Snap App",
@@ -189,6 +225,7 @@ export const projectData = [
     path: `snap-app`,
     langaugesIcons: [FLUTTER],
     mobileDisplay: false,
+    category: ProjectCategory.SCHOOL
   },
   {
     name: "Complex Word Classifier",
@@ -210,7 +247,11 @@ export const projectData = [
       </>,
     langaugesIcons: [PYTHON],
     mobileDisplay: false,
+    category: ProjectCategory.SCHOOL
   },
 
 
 ];
+
+
+export type Project = typeof projectData[number];
