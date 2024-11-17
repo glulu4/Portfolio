@@ -7,6 +7,7 @@ import {HaskellOriginal} from 'devicons-react';
 import {FirebaseOriginalWordmark} from 'devicons-react';
 import {TailwindcssOriginal} from 'devicons-react';
 import {NextjsOriginalWordmark} from 'devicons-react';
+import TableauIcon from '../src/components/TableauIcon';
 
 // https://devicons-react.vercel.app/latest
 const FLASK = <FlaskOriginalWordmark size='70' />
@@ -18,11 +19,13 @@ const HASKELL = <HaskellOriginal size='60' />
 const FIREBASE = <FirebaseOriginalWordmark size="82" />
 const TailWind = <TailwindcssOriginal size="60" />
 const Next = <NextjsOriginalWordmark size='75' />
+const Tableau = <TableauIcon />
 
 enum ProjectCategory {
   SCHOOL = "School",
   WEBSITE = "Website",
   APP = "Mobile",
+  CONTRACT = "Contract / Professional",
   OTHER = "Other"
 }
 
@@ -231,7 +234,6 @@ export const projectData = [
     name: "Complex Word Classifier",
     description: "Naive Bayes / Logistic Regression model that can predict complex words in a given text",
     gif: "/gifs/classifier.gif",
-
     path: `classifier`,
     detail:
 
@@ -248,6 +250,37 @@ export const projectData = [
     langaugesIcons: [PYTHON],
     mobileDisplay: false,
     category: ProjectCategory.SCHOOL
+  },
+  {
+    name: "Python Bank Statement Parser",
+    description: "Python bank statment parsers that clean and export data",
+    // gif: "...",
+    path: `python-parser`,
+    detail:
+
+      <>
+      I was hired on a contract to develop Python scripts to analyze PDF bank statements.
+      The goal was to extract data and export it into structured Pandas 
+      DataFrames for detailed financial analysis      
+      </>,
+    langaugesIcons: [PYTHON],
+    mobileDisplay: false,
+    category: ProjectCategory.CONTRACT
+  },
+  {
+    name: "Tableau Interactive Dashboard",
+    description: "Dynamic Tableau dashboard designed to analyze and visualize nursing home data",
+    // /gif: "...",
+    path: `tableau-dashboard`,
+    detail:
+    <>
+      I was hired on a contract to develop and design interactive Tableau dashboards for visualizing key business metrics. 
+      The dashboards integrated seamlessly with data sources and provided actionable insights through filters, calculated fields,
+  and custom visualizations. Additionally, I collaborated with stakeholders to ensure the dashboards aligned with business goals.
+    </>,
+    langaugesIcons: [Tableau],
+    mobileDisplay: false,
+    category: ProjectCategory.CONTRACT
   },
 
 
