@@ -282,6 +282,20 @@ export const projectData = [
     mobileDisplay: false,
     category: ProjectCategory.CONTRACT
   },
+  {
+    name: "Modern Kitchen Website",
+    description: "Designed a modern webiste for custom kitchens",
+    gif: "/gifs/kitchen-modern-video.gif",
+    path: `kitchen-miami`,
+    detail:
+      <>
+        I was hired to design and develop a sleek webiste for kitchen contractors in Miami. 
+        I used Next.js and Tailwind CSS to design the site. I also used the Wisp Starter Blog to start the project.
+      </>,
+    langaugesIcons: [Next, TailWind],
+    mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
+  },
 
 
 ];
