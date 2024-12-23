@@ -296,6 +296,21 @@ export const projectData = [
     mobileDisplay: false,
     category: ProjectCategory.WEBSITE
   },
+  {
+    name: "Roofing Website",
+    description: "Designed & developed a modern roofing website",
+    gif: "/gifs/roofing.gif",
+    path: `roofing`,
+    detail:
+      <>
+        I was hired to design and develop a beautiful website for local roofers. They requested a unique design and cohesive color system to match their branding.
+        I worked closely with them to create a professional and visually appealing platform that effectively showcases their services and builds trust with potential clients.
+        The project involved using Next.js and Tailwind CSS for a responsive and modern design.
+        Additionally, I utilized the Wisp Starter Blog as a foundation to accelerate development and ensure scalability.      </>,
+    langaugesIcons: [Next, TailWind],
+    mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
+  },
 
 
 ];
