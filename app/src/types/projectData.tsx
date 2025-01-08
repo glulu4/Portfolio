@@ -15,17 +15,17 @@ const JAVA = < JavaOriginal size='50' />;
 const PYTHON = <PythonOriginalWordmark size='60' />;
 const REACT = < ReactOriginal size='60' />;
 const FLUTTER = <FlutterOriginal size="55" />;
-const HASKELL = <HaskellOriginal size='60' />
-const FIREBASE = <FirebaseOriginalWordmark size="82" />
-const TailWind = <TailwindcssOriginal size="60" />
-const Next = <NextjsOriginalWordmark size='75' />
-const Tableau = <TableauIcon />
+const HASKELL = <HaskellOriginal size='60' />;
+const FIREBASE = <FirebaseOriginalWordmark size="82" />;
+const TailWind = <TailwindcssOriginal size="60" />;
+const Next = <NextjsOriginalWordmark size='75' />;
+const Tableau = <TableauIcon />;
 
 enum ProjectCategory {
   SCHOOL = "School",
   WEBSITE = "Website",
   APP = "Mobile",
-  CONTRACT = "Contract / Professional",
+  DATA = "Data",
   OTHER = "Other"
 }
 
@@ -265,7 +265,7 @@ export const projectData = [
       </>,
     langaugesIcons: [PYTHON],
     mobileDisplay: false,
-    category: ProjectCategory.CONTRACT
+    category: ProjectCategory.DATA
   },
   {
     name: "Tableau Interactive Dashboard",
@@ -280,7 +280,7 @@ export const projectData = [
     </>,
     langaugesIcons: [Tableau],
     mobileDisplay: false,
-    category: ProjectCategory.CONTRACT
+    category: ProjectCategory.DATA
   },
   {
     name: "Modern Kitchen Website",
