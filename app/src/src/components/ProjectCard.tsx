@@ -25,7 +25,10 @@ const ProjectCard = ({name, description, path, languageIcons}: ProjectCardProps)
       onMouseLeave={handleMouseLeave}
     >
       <Link to={path} style={styles.linkStyle}>
-        <h1 style={{...styles.cardTitle, ...styles.underlineOnHover}}>{name}</h1>
+      <div style={styles.cardTitleDiv}>
+          <h1 style={{...styles.cardTitle, ...styles.underlineOnHover}}>{name}</h1>
+
+      </div>
         <p style={styles.projectDescription}>{description}</p>
         <div style={styles.iconDiv}>
           {languageIcons.map((icon, index) => (
@@ -53,6 +56,10 @@ const styles = createStyles({
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
   },
+  cardTitleDiv:{
+    width:"90%",
+
+  },
   // cardHover: {
   //   boxShadow: '20px 15px rgba(0, 0, 0, 0.2)',
   // },
@@ -64,6 +71,7 @@ const styles = createStyles({
     textAlign: 'center',
     fontSize: '2em',
     fontFamily: 'Inter, sans-serif',
+    wordWrap:'break-word'
   },
   projectDescription: {
     fontFamily: '"IBMPlexMono", monospace',
@@ -89,6 +97,7 @@ const styles = createStyles({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    flexWrap:"wrap",
     gap: '2rem',
     paddingTop: '1.5rem',
   },

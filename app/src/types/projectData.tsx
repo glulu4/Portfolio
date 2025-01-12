@@ -311,6 +311,20 @@ export const projectData = [
     mobileDisplay: false,
     category: ProjectCategory.WEBSITE
   },
+  {
+    name: "ThingsToGoDo.com",
+    description: "Generate ideas for things to do in your area with AI",
+    gif: "/gifs/event.gif",
+    path: `event`,
+    detail:
+      <>
+        Created a small but beautifully designed website with next.js and tailwind to generate ideas for things to do in any area. 
+        I integrated the Open AI api and used a proxy to hide my server endpoint.
+          </>,
+    langaugesIcons: [Next, TailWind, FIREBASE],
+    mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
+  },
 
 
 ];
