@@ -38,14 +38,17 @@ export const projectData = [
     detail:
       <>
         Quantified – Leading the development of a
-        React Native app with Firebase as the backend,
-        designed to allow users to track, analyze, and
-        visualize their health metrics. Collaborating with
+        React Native/Firebase health tracking app. 
+
+        The app is designed to allow users to track, analyze, and
+        visualize their health metrics. I've been collaborating with
         senior developers to implement secure user
         authentication, real-time data updates, and
         dynamic graphing features. Spearheading the
         integration of Firebase for efficient data
         storage and app scalability.
+
+        DESIGNS NOT IMPLEMENTED YET.
 
       </>,
     path: `quantified`,
