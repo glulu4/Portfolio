@@ -203,6 +203,31 @@ export const projectData = [
     mobileDisplay: false,
     category: ProjectCategory.WEBSITE
   },
+
+  {
+    name: "Ecommerce Jewelry Website",
+    description: "A beautifully designed eCommerce platform for repurposed jewelry.",
+    gif: "/gifs/chanel.gif",
+    detail:
+      <>
+        Amber's Jewelry Boutique is a Next.js-powered eCommerce site that showcases a curated collection of
+        repurposed jewelry pieces. Styled with Tailwind CSS, the site provides a seamless and visually
+        appealing shopping experience.
+
+        To streamline product management, I developed an **automated script** that efficiently adds products in bulk,
+        reducing manual effort and ensuring consistency in product listings.
+
+        I integrated the Stripe API for payments and inventory management.
+
+        The site can be found <a href='https://www.ambersjewelryboutique.com' target='_blank'>here</a>.
+      </>,
+    path: `jewelry`,
+    langaugesIcons: [Next, TailWind],
+    mobileDisplay: false,
+    category: ProjectCategory.WEBSITE
+  },
+
+
   {
     name: "Shakespeare Language Model",
     description: "Trained an n-gram model on a Shakespeare corpus",
