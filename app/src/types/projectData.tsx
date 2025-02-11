@@ -219,7 +219,7 @@ export const projectData = [
 
         I integrated the Stripe API for payments and inventory management.
 
-        The site can be found <a href='https://www.ambersjewelryboutique.com' target='_blank'>here</a>.
+        The site can be found <a href='https://www.ambersjewelryboutique.com' rel="noreferrer" target='_blank'>here</a>.
       </>,
     path: `jewelry`,
     langaugesIcons: [Next, TailWind],
